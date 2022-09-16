@@ -1,0 +1,439 @@
+:root{
+
+    /*---background-color-root----*/
+
+    --standart-background-color: #FFFFFF;
+    --accent-background-color: #F5F4FA;
+    --primary-background-color: #2F303A;
+
+    /*---text-color-root----*/
+
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #FFFFFF;
+    --text-color-a: rgba(255, 255, 255, 0.6);
+   
+   /*---font-size-root----*/
+
+    --primary-font-size: 14px;
+    --title-font-size: 36px;
+    --accent-font-size: 16px;
+    --font-size-a: 26px;
+    --font-size-b: 44px;
+    --font-size-c: 18px;
+
+  /*---line-height-root----*/
+
+    --line-height-a: 1.14285714;
+    --line-height-b: 1.1875;
+    --line-height-c: 1.71428571;
+    --line-height-d: 1.625;
+    --line-height-p: 1.875;
+    --line-height-e: 1.19230769;
+    --line-height-f: 2;
+    --line-height-g: 1.16666667;
+    --line-height-o: 1.36363636;
+  
+/*---letter-spacing-root----*/
+    --letter-spacing-a: 0.02em;
+    --letter-spacing-b: 0.03em;
+    --letter-spacing-c: 0.06em;
+
+/*---nav-color-root----*/
+
+    --nav-color: #2196F3;
+    --nav-color-one: #212121;
+   
+/*---other-root----*/
+
+    --border-color: #ECECEC;
+    --button-border-radius: 4px;
+    --shadow-color: rgba(37, 36, 36, 0.5);
+   
+}
+
+ /*---header---*/
+
+ .container{
+   margin: 0 auto;
+   width: 1200px;
+   padding: 47px 15px 47px 15px;
+ }
+
+ /* navigation */
+
+/*---navigation-text-options---*/
+
+.section-two{
+    background-color: var(--primary-background-color);
+}
+    .nav-container{
+    padding: 0 15px 47px 15px;
+    margin: 0 auto;
+    width: 1200px;
+    }
+    .line{
+        border-bottom: 1px solid var(--border-color);
+    }
+    .current{
+        border-bottom: 8px solid var(--nav-color, var(--nav-color-one));
+    }
+            .header-nav, .nav-menu, .nav-contacts{
+             display: flex;
+             
+            }
+            .nav-web{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: var(--font-size-a);
+                line-height: var(--line-height-e);
+                letter-spacing: var(--letter-spacing-b);
+                color: var(--nav-color);
+                text-decoration: none;
+                margin-right: 93px;
+                padding: 24px 0 12px 0;
+                display: block;
+
+            }
+                .nav-studio{
+                    color: var(--title-text-color);
+                    padding: 24px 0 12px 0;
+                }
+            .nav-menu{
+                margin-right: 344px;
+            }
+                .menu-link, .menu-contacts, .contacts-mail, .contacts-phone{
+                   text-decoration: none;
+                   color: var(--title-text-color);
+                   margin-left: auto;
+                   font-family: 'Roboto';
+                   font-style: normal;
+                   font-weight: 500;
+                   font-size: var(--primary-font-size);
+                   line-height: var(--line-height-a);
+                   letter-spacing: var(--letter-spacing-a);
+                   padding: 32px 0 20px 0;
+                   display: block;   
+                }
+                .menu-link, .contacts-mail{
+                    margin-right: 50px;
+                }
+                .contacts-mail, .contacts-phone{
+                    color: var(--primary-text-color);
+                padding-right: 0;
+                }
+                
+ /*---navigation effects---*/
+
+             .menu-link:hover, .menu-link:focus,
+             .menu-contacts:hover, .menu-contacts:focus,
+             .contacts-mail:hover, .contacts-mail:focus,
+             .nav-studio:hover, .nav-studio:focus{
+             color: var(--nav-color);
+             transition: 0.6s;
+             }
+             .nav-studio:hover, .nav-studio:focus, 
+             .contacts-phone:hover, .contacts-phone:focus, 
+             .contacts-mail:hover, .contacts-mail:focus{
+             color:  var(--nav-color);
+             text-decoration: underline;
+             transition: 0.6s;
+             }
+             .nav-web:hover, .nav-web:focus{
+                color: var(--nav-color-one);
+                text-decoration: underline;
+                transition: 0.6s;
+              }
+
+/*---web-studio---*/
+
+/*---launnch---*/
+
+.launnch-container{
+    padding: 12px 15px 47px 15px;
+    margin: 0 auto;
+    width: 1200px;
+    }
+
+/*---launnch-options---*/
+
+    .slogan-launnch{
+        padding: 200px 252px 15px 252px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: var(--font-size-b);
+        line-height: var(--line-height-o);
+        text-align: center;
+        letter-spacing: var(--letter-spacing-c);
+        text-transform: uppercase;
+        color:var(--accent-text-color);
+      }
+        .launnch-button{
+            background-color: var(--nav-color);
+            margin: 15px 482px 200px 482px;
+            padding: 10px 24px;
+            cursor: pointer;
+            border-radius: var(--button-border-radius);
+            border-color: var(--standart-background-color);
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: var(--accent-font-size);
+            letter-spacing: var(--letter-spacing-c); 
+            line-height: var(--line-height-p);
+            color:var(--accent-text-color);
+        }
+        
+
+    /*---launnch-navigation-effects---*/
+
+         .launnch-button:hover{
+         border-color: var(--nav-color);
+         color: var(--nav-color);
+         background-color: var(--standart-background-color);
+         transition: 0.35s;
+         }
+
+         .invisible{
+            display: none;
+         }
+
+/*---our advantages---*/
+
+.advantages{
+    padding: 47px 0;
+}
+    .text-item{
+        display: flex;
+        column-gap: 30px;
+    }
+            .advantages-title{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: var(--primary-font-size);
+                line-height: var(--line-height-a);
+                letter-spacing: var(--letter-spacing-b);
+                color: var(--title-text-color);
+                padding-bottom: 10px;
+                min-height: 16px;
+                min-width: 270px;
+            }
+                .advantages-parag{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: var(--primary-font-size);
+                    line-height: var(--line-height-c);
+                    letter-spacing: var(--letter-spacing-b);
+                    color: var(--primary-text-color);
+                    min-height: 72px;
+                    min-width: 270px;
+                } 
+
+/*---what we do---*/
+
+.what-title{
+        padding: 0 0 25px 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: var(--title-font-size);
+        line-height: var(--line-height-g);
+        text-align: center;
+        letter-spacing: var(--letter-spacing-b);
+        color: var(--title-text-color);
+        min-height: 42px;
+        min-width: 366px;
+}
+.what-we{
+    display: flex;
+    column-gap: 30px;
+}
+
+/*---our team---*/
+
+.section-five{
+    background-color: var(--accent-background-color);
+}
+    .our-team{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: var(--title-font-size);
+        line-height: var(--line-height-g);
+        text-align: center;
+        letter-spacing: var(--letter-spacing-b);
+        color: var(--title-text-color);
+        min-height: 42px;
+        min-width: 264px;
+    }
+
+
+        .grid{
+            display: flex;
+            column-gap: 30px;
+            padding-top: 25px;
+        }
+
+                .team-wrapper{
+                    box-shadow: 0 4px 4px var(--shadow-color);
+                    border-radius: 0 0 4px 4px;
+                }
+                    .team-part{
+                        background-color: var(--standart-background-color);
+                        min-height: 368px;
+                        min-width: 270px;
+                    }
+                        .team-name{
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: var(--accent-font-size);
+                            line-height: var(--line-height-b);
+                            text-align: center;
+                            letter-spacing: var(--letter-spacing-b);
+                            color: var(--title-text-color);
+                            padding: 30px 0px 5px 0px;    
+                        }
+                        .team-position{
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: var(--accent-font-size);
+                            line-height: var(--line-height-b);
+                            text-align: center;
+                            letter-spacing: var(--letter-spacing-b);
+                            color: var(--primary-text-color);
+                            padding: 5px 0px 30px 0px;
+                        }
+
+/*---portfolio---*/
+
+/*---launnch---*/
+
+.launnch{
+   display: flex;
+   padding: 0 297.5px 25px 297.5px;
+   gap: 8px;
+   
+}
+
+   /*---button effects---*/
+
+      .but-laun:hover, .but-laun:focus {
+        background-color: var(--nav-color);
+        color: var(--standart-background-color);
+        border-color: var(--nav-color);
+        border-radius: var(--button-border-radius);
+        transform: translate3d(100%);
+        transition: 0.35s;
+      }
+
+/*---button parameters---*/
+
+   .but-laun{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: var(--accent-font-size);
+      line-height: var(--line-height-d);
+      letter-spacing: var(--letter-spacing-b);
+      padding: 6px 20px;
+      cursor: pointer;    
+   }
+   
+   /*---table of contents---*/
+
+   
+   .table-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding-top: 25px;
+   }
+
+      /*---table text parameters---*/
+
+        .list-title{
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 700;
+           font-size: var(--font-size-c);
+           line-height: var(--line-height-f);
+           letter-spacing: var(--letter-spacing-c);
+           color: var(--title-text-color);
+           padding: 20px 24px 8px 24px;
+         }
+         .list-tex{
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 400;
+           font-size: var(--accent-font-size);
+           line-height: var(--line-height-p);
+           letter-spacing: var(--letter-spacing-b);
+           color: var(--primary-text-color);
+           padding: 0px 24px 20px 24px;
+         }
+
+/*---footer---*/
+
+.section-six{
+   background-color: var(--primary-background-color);
+}
+
+   .footer-address{
+   padding: 60px 0 60px 0;
+   }
+
+       .footer-web{
+           font-family: 'Raleway';
+           font-style: normal;
+           font-weight: 700;
+           font-size: var(--font-size-a);
+           line-height: var(--line-height-e);
+           letter-spacing: var(--letter-spacing-b);
+           color: var( --nav-color);
+           text-decoration: none;
+           padding-bottom: 10px;
+           
+       }
+           .footer-stud, .address-location{
+               color: var(--accent-text-color);
+           }    
+               .address-location, .address-mail, .address-phone{
+                   padding: 10px 0 5px 0;
+                   font-family: 'Roboto';
+                   font-style: normal;
+                   font-weight: 400;
+                   font-size: var(--primary-font-size);
+                   line-height: var(--line-height-c);
+                   letter-spacing: var(--letter-spacing-b);
+                   text-decoration: none;
+                   display: block;
+                }
+               .address-mail, .address-phone{
+                   color: var(--text-color-a);
+                   padding: 5px 0 5px 0;
+                }
+               .address-phone{
+                   padding: 5px 0 0 0;
+               }
+
+/*---footer navigation effects---*/
+
+            .footer-web:hover, .footer-web:focus,
+            .footer-stud:hover,.footer-stud:focus{
+                text-decoration: underline;
+                color: var(--accent-text-color);
+                transition: 0.6s;
+            }       
+                   .address-location:hover, 
+                   .address-location:focus{
+                        color:  var(--nav-color);
+                        text-decoration: underline;
+                        transition: 0.6s;
+                   }
+
